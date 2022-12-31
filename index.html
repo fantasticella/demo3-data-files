@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hands-On with JavaScript</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<script src="script.js"> </script>
+</head>
+
+<body>
+
+	<h1>Hands-On with JavaScript</h1>
+
+	<div class="grid">
+
+		<article>
+
+			<h2>JavaScript Methods &amp; Inline JavaScript</h2>
+
+			<button onclick="alert('Welcome')">Alert</button>
+			<button onclick="confirm('Do you wish to proceed?')">Confirm</button>
+			<button onclick="prompt('What is your name?')">Prompt</button>
+			<button onclick="document.write('I am taking over!')">Write</button>
+			<button onclick="console.log('Find me in the console.')">Log</button>
+
+			<hr>
+			<p>What is the difference between all of these methods?</p>
+			<p>Which methods are pop-ups? Which method(s) display on the webpage document?</p>
+			<p>Which method(s) are Boolean?</p>
+
+		</article>
+
+		<article>
+
+			<h2>Parameters &amp; Em bedded JavaScript</h2>
+
+			<h4>Result of someMath function is:</h4>
+			<p id="mathResult"></p>
+
+			<script>
+
+
+
+				function someMath(x, y) {
+					 return x * y;
+				}
+
+				var answer = someMath(8, 3);
+				document.getElementById("mathResult").innerHTML = answer;
+
+
+			</script>
+
+			<hr>
+			<p>What is a parameter?</p>
+			<p>What is an argument?</p>
+			<p>How do we pass arguments to a function?</p>
+
+		</article>
+
+		<article>
+
+			<h2>Concatenation &amp; External JavaScript</h2>
+			<button onclick="comeTogether()">Concat</button>
+
+			<h4>Result of the function is:</h4>
+			<p id="concatResult"></p>
+
+			<hr>
+			<h4>Events vs. Event Handlers</h4>
+			<p>Click is the actual event.</p>
+			<p>Onclick is the event handler that handles the click event and calls a function.</p>
+
+	   </article>
+
+		 <article>
+
+ 			<h2>Variables</h2>
+
+			<p>Global variables can be used by any function and functions can reassign variable values.</p>
+			<p>Local variables can only be used by the function in which it is defined.</p>
+
+			<button onclick="add()">Call Add Function</button>
+			<h4>Result of calling the add function:</h4>
+			<p id="addResult"></p>
+
+			<button onclick="substract()">Call Subtract Function</button>
+			<h4>Result of calling the subtract function:</h4>
+			<p id="subResult"></p>
+
+ 	   </article>
+
+		 <article>
+
+ 			<h2>Reading JavaScript Statements</h2>
+
+			<p>Carefully review functions to determine if they define their own variables or if they are using global variables.</p>
+
+			<p>How do you define a variable within a function?</p>
+			<p>How do you use a global variable within a function?</p>
+
+ 	   </article>
+
+		 <article>
+
+ 			<h2>More JavaScript Methods</h2>
+
+			<form>
+				<label for="first-name">First name:</label><br>
+			  <input type="text" id="first-name" name="first-name" onblur="blurMsg()"><br>
+
+				<label for="last-name">Last name:</label><br>
+			  <input type="text" id="last-name" name="last-name" onfocus="focusMsg()"><br><br>
+
+			  <input type="submit" value="Submit">
+			</form>
+
+			<h4 id="message"></h4>
+
+			<hr><br>
+
+			<button onclick="upper()">See Uppercase</button>
+			<br><br>
+			<button onclick="lower()">See Lowercase</button>
+
+ 	   </article>
+
+	</div>
+
+	<footer class="grid">
+		<h2 class="span-grid">References:</h4>
+
+		<section>
+			<p><a href="https://www.w3schools.com/jsref/met_win_alert.asp" target="_blank">alert method</a></p>
+			<p><a href="https://www.w3schools.com/jsref/met_win_confirm.asp" target="_blank">confirm method</a></p>
+			<p><a href="https://www.w3schools.com/jsref/met_win_prompt.asp" target="_blank">prompt method</a></p>
+			<p><a href="https://www.w3schools.com/jsref/met_doc_write.asp" target="_blank">write method</a></p>
+			<p><a href="https://www.w3schools.com/jsref/met_console_log.asp" target="_blank">log method</a></p>
+		</section>
+
+		<section>
+			<p><a href="https://www.w3schools.com/js/js_functions.asp" target="_blank">JavaScript Functions, Parameters, and Arguments</a></p>
+			<p><a href="https://www.w3schools.com/js/js_variables.asp" target="_blank">Variables</a></p>
+			<p><a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">Events</a></p>
+			<p><a href="https://www.w3schools.com/js/js_events.asp">Event Handlers</a></p>
+		</section>
+
+		<section>
+			<p><a href="https://www.w3schools.com/js/js_whereto.asp" target="_blank">Inline, Embedded, External JavaScript</a></p>
+			<p><a href="https://www.w3schools.com/js/js_operators.asp" target="_blank">Operators, Concatenation</a></p>
+			<p><a href="https://www.w3schools.com/jsref/jsref_touppercase.asp" target="_blank">Uppercase Method</a></p>
+			<p><a href="https://www.w3schools.com/jsref/jsref_tolowercase.asp" target="_blank">Lowercase Method</a></p>
+		</section>
+	</footer>
+
+</body>
+</html>
